@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\dotnet.Repositories\dotnet.Repositories.csproj" />
+    <ProjectReference Include="..\..\Domain\dotnet.Entities\dotnet.Entities.csproj" />
+    <ProjectReference Include="..\..\Services\dotnet.ServiceInterfaces\dotnet.ServiceInterfaces.csproj" />
+    <ProjectReference Include="..\..\Api\dotnet.Contracts\dotnet.Contracts.csproj" />
+    <ProjectReference Include="..\..\Data\dotnet.RepoInterfaces\dotnet.RepoInterfaces.csproj" />
+    <ProjectReference Include="..\dotnet.ServiceInterfaces\dotnet.ServiceInterfaces.csproj" />
+  </ItemGroup>
+
+</Project>

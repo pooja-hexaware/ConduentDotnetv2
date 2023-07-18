@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Scrutor" Version="4.2.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <ProjectReference Include="..\..\Services\dotnet.Services\dotnet.Services.csproj" />
+      <ProjectReference Include="..\..\Services\dotnet.ServiceGateways\dotnet.ServiceGateways.csproj" />
+      <ProjectReference Include="..\..\Services\dotnet.ServiceInterfaces\dotnet.ServiceInterfaces.csproj" />
+      <ProjectReference Include="..\dotnet.Contracts\dotnet.Contracts.csproj" />
+      <ProjectReference Include="..\..\Common\dotnet.Common\dotnet.Common.csproj" />
+      <ProjectReference Include="..\..\Data\dotnet.Repositories\dotnet.Repositories.csproj" />
+  </ItemGroup>    
+
+</Project>
